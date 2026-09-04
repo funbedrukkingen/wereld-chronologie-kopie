@@ -1,10 +1,5 @@
-import { TimelineApp } from '@/components/timeline/timeline-app'
-import { eras, events, lanes } from '@/lib/timeline-data'
+import { WorkflowApp } from '@/components/workflow/workflow-app'
 
 export default function Page() {
-  return (
-    <main className="h-dvh">
-      <TimelineApp eras={eras} lanes={lanes} events={events} />
-    </main>
-  )
+  return <WorkflowApp />
 }
