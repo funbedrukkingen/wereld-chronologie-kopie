@@ -17,9 +17,9 @@ const spectral = Spectral({
 })
 
 export const metadata: Metadata = {
-  title: 'Flowstate — Paginated Workflow Timeline',
+  title: 'Strata — Wereldchronologie',
   description:
-    'A high-contrast workflow management dashboard with paginated phases, nested tasks, owners, and project progress.',
+    'Een interactieve chronologie van wereldgeschiedenis, Mesopotamië, de Hebreeuwse Bijbel en de kerk.',
   generator: 'v0.app',
   icons: {
     icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
