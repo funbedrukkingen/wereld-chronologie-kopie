@@ -17,9 +17,9 @@ const spectral = Spectral({
 })
 
 export const metadata: Metadata = {
-  title: 'Strata — A Timeline of Mesopotamia, the Bible and the Church',
+  title: 'Flowstate — Paginated Workflow Timeline',
   description:
-    'A horizontal, era-segmented timeline from 450,000 years ago to today, placing Sumerian and Babylonian history alongside the Hebrew Bible, the New Testament and the history of the Christian Church.',
+    'A high-contrast workflow management dashboard with paginated phases, nested tasks, owners, and project progress.',
   generator: 'v0.app',
   icons: {
     icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  themeColor: '#26231f',
+  themeColor: '#0d1117',
   width: 'device-width',
   initialScale: 1,
 }
