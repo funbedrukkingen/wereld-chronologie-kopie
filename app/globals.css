@@ -75,6 +75,8 @@
   --lane-israel: oklch(0.82 0.1 35);
   /* Southern Kingdom (Judah + Benjamin, 2 tribes): light lapis */
   --lane-judah: oklch(0.83 0.09 245);
+  /* Natural catastrophes in the World lane (eruptions, drought, famine, plague): ember */
+  --lane-disaster: oklch(0.64 0.16 35);
 }
 
 @layer base {

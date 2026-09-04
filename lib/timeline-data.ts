@@ -381,6 +381,270 @@ export const events: TimelineEvent[] = [
     title: 'World Wide Web goes public',
   },
 
+  // ── Natural catastrophes: eruptions, droughts, famines, pandemics ──
+  // Coloured ember (--lane-disaster) so they stand out within the World lane.
+
+  // Volcanic eruptions
+  {
+    id: 'w-thera',
+    lane: 'world',
+    year: -1600,
+    approx: true,
+    color: 'var(--lane-disaster)',
+    title: 'Eruption of Thera (Santorini)',
+    description:
+      'One of the largest eruptions in human history devastates the Minoan settlement of Akrotiri and sends tsunamis across the Aegean. Its dust veil is detected in ice cores and tree rings and is often linked to the decline of Minoan Crete.',
+    source: 'Volcanology; ice-core & dendrochronology',
+    related: ['w-collapse'],
+  },
+  {
+    id: 'w-vesuvius',
+    lane: 'world',
+    year: 79,
+    color: 'var(--lane-disaster)',
+    title: 'Vesuvius buries Pompeii',
+    description:
+      'Mount Vesuvius erupts, entombing Pompeii and Herculaneum under ash and pyroclastic flows. Pliny the Younger\u2019s letters give the first detailed eyewitness account of a major eruption.',
+    source: 'Pliny the Younger, Letters 6.16, 6.20',
+  },
+  {
+    id: 'w-536',
+    lane: 'world',
+    year: 536,
+    endYear: 537,
+    color: 'var(--lane-disaster)',
+    title: 'The 536 CE dust veil — "the worst year to be alive"',
+    description:
+      'A mysterious fog, now traced to a massive volcanic eruption, dims the sun for over a year. Summer frosts, crop failures and famine follow across Europe and Asia, helping set the stage for the Plague of Justinian.',
+    source: 'Procopius; Cassiodorus; ice-core data',
+    related: ['w-justinian-plague'],
+  },
+  {
+    id: 'w-laki',
+    lane: 'world',
+    year: 1783,
+    endYear: 1784,
+    color: 'var(--lane-disaster)',
+    title: 'Laki eruption (Iceland)',
+    description:
+      'An eight-month fissure eruption releases a toxic haze over Europe, killing a fifth of Iceland\u2019s people and their livestock. Crop failures and hardship ripple across the continent in the following years.',
+    source: 'Historical & volcanological records',
+  },
+  {
+    id: 'w-tambora',
+    lane: 'world',
+    year: 1815,
+    color: 'var(--lane-disaster)',
+    title: 'Tambora erupts — the "Year Without a Summer"',
+    description:
+      'The most powerful eruption in recorded history (Indonesia) lowers global temperatures, causing snow in June, failed harvests and famine across the Northern Hemisphere in 1816.',
+    source: 'Volcanology; 1816 climate records',
+  },
+  {
+    id: 'w-krakatoa',
+    lane: 'world',
+    year: 1883,
+    color: 'var(--lane-disaster)',
+    title: 'Krakatoa explodes',
+    description:
+      'The eruption and its tsunamis kill tens of thousands in the Sunda Strait. The blast is heard thousands of kilometres away and vivid sunsets are seen worldwide for months.',
+    source: 'Contemporary scientific reports',
+  },
+  {
+    id: 'w-pinatubo',
+    lane: 'world',
+    year: 1991,
+    color: 'var(--lane-disaster)',
+    title: 'Mount Pinatubo (Philippines)',
+    description:
+      'The second-largest eruption of the 20th century injects sulfate aerosols into the stratosphere, cooling global temperatures by about 0.5 \u00b0C for a couple of years.',
+    source: 'USGS / PHIVOLCS',
+  },
+
+  // Droughts & famines
+  {
+    id: 'w-42ka',
+    lane: 'world',
+    year: -2200,
+    endYear: -2100,
+    approx: true,
+    color: 'var(--lane-disaster)',
+    title: '4.2-kiloyear drought event',
+    description:
+      'A century-scale megadrought across the Near East, Egypt and the Indus. Widely linked to the collapse of the Akkadian Empire and Egypt\u2019s Old Kingdom.',
+    source: 'Paleoclimatology; Curse of Agade',
+    related: ['skl-akkad', 'w-collapse'],
+  },
+  {
+    id: 'w-great-famine',
+    lane: 'world',
+    year: 1315,
+    endYear: 1317,
+    color: 'var(--lane-disaster)',
+    title: 'Great Famine of Europe',
+    description:
+      'Years of relentless rain ruin harvests across northern Europe, killing millions and ending centuries of population growth just decades before the Black Death.',
+    source: 'Medieval chronicles',
+    related: ['w-black-death'],
+  },
+  {
+    id: 'w-irish-famine',
+    lane: 'world',
+    year: 1845,
+    endYear: 1852,
+    color: 'var(--lane-disaster)',
+    title: 'Great Irish Famine',
+    description:
+      'Potato blight destroys the staple crop of Ireland; roughly a million die and a million more emigrate, permanently reshaping the country\u2019s population.',
+    source: 'Historical records',
+  },
+  {
+    id: 'w-north-china-famine',
+    lane: 'world',
+    year: 1876,
+    endYear: 1879,
+    color: 'var(--lane-disaster)',
+    title: 'Northern Chinese Famine',
+    description:
+      'A catastrophic drought-famine tied to a strong El Ni\u00f1o kills an estimated 9\u201313 million people across northern China.',
+    source: 'Qing records; climate studies',
+  },
+  {
+    id: 'w-dust-bowl',
+    lane: 'world',
+    year: 1930,
+    endYear: 1936,
+    color: 'var(--lane-disaster)',
+    title: 'The Dust Bowl',
+    description:
+      'Severe drought and poor land use turn the American and Canadian prairies into dust storms, displacing hundreds of thousands during the Great Depression.',
+    source: 'US historical records',
+  },
+  {
+    id: 'w-bengal-famine',
+    lane: 'world',
+    year: 1943,
+    color: 'var(--lane-disaster)',
+    title: 'Bengal Famine',
+    description:
+      'Wartime disruption, crop shortfalls and policy failures cause a famine in British India that kills an estimated 2\u20133 million people.',
+    source: 'Historical records',
+  },
+  {
+    id: 'w-great-chinese-famine',
+    lane: 'world',
+    year: 1959,
+    endYear: 1961,
+    color: 'var(--lane-disaster)',
+    title: 'Great Chinese Famine',
+    description:
+      'Drought combined with the policies of the Great Leap Forward produces one of the deadliest famines in history, with tens of millions of deaths.',
+    source: 'Demographic studies',
+  },
+
+  // Pandemics
+  {
+    id: 'w-athens-plague',
+    lane: 'world',
+    year: -430,
+    endYear: -426,
+    color: 'var(--lane-disaster)',
+    title: 'Plague of Athens',
+    description:
+      'An epidemic during the Peloponnesian War kills perhaps a third of Athens\u2019 population, including Pericles, and is described in vivid detail by Thucydides.',
+    source: 'Thucydides, History 2.47–54',
+  },
+  {
+    id: 'w-antonine-plague',
+    lane: 'world',
+    year: 165,
+    endYear: 180,
+    color: 'var(--lane-disaster)',
+    title: 'Antonine Plague',
+    description:
+      'Probably smallpox, brought back by Roman armies from the east. It kills millions across the empire and strains Rome at its height.',
+    source: 'Galen; Roman sources',
+  },
+  {
+    id: 'w-justinian-plague',
+    lane: 'world',
+    year: 541,
+    endYear: 549,
+    color: 'var(--lane-disaster)',
+    title: 'Plague of Justinian',
+    description:
+      'The first recorded pandemic of bubonic plague sweeps the Byzantine Empire and the Mediterranean, killing tens of millions and helping to reshape late antiquity.',
+    source: 'Procopius; John of Ephesus',
+    related: ['w-536'],
+  },
+  {
+    id: 'w-black-death',
+    lane: 'world',
+    year: 1347,
+    endYear: 1351,
+    color: 'var(--lane-disaster)',
+    title: 'The Black Death',
+    description:
+      'Bubonic plague kills an estimated 30\u201360% of Europe\u2019s population in a few years, with vast social, economic and religious consequences.',
+    source: 'Medieval chronicles',
+    related: ['w-great-famine'],
+  },
+  {
+    id: 'w-columbian-smallpox',
+    lane: 'world',
+    year: 1520,
+    color: 'var(--lane-disaster)',
+    title: 'Smallpox reaches the Americas',
+    description:
+      'Old World diseases introduced after 1492 devastate Indigenous populations, killing a large share within a century and enabling European conquest.',
+    source: 'Colonial accounts; epidemiology',
+    related: ['w-columbus'],
+  },
+  {
+    id: 'w-london-plague',
+    lane: 'world',
+    year: 1665,
+    endYear: 1666,
+    color: 'var(--lane-disaster)',
+    title: 'Great Plague of London',
+    description:
+      'The last major English outbreak of bubonic plague kills roughly a quarter of London\u2019s population before the Great Fire of 1666.',
+    source: "Samuel Pepys; Bills of Mortality",
+  },
+  {
+    id: 'w-spanish-flu',
+    lane: 'world',
+    year: 1918,
+    endYear: 1920,
+    color: 'var(--lane-disaster)',
+    title: 'Influenza pandemic ("Spanish flu")',
+    description:
+      'An H1N1 influenza pandemic infects a third of humanity and kills an estimated 50 million people, more than the First World War it followed.',
+    source: 'Epidemiological studies',
+    related: ['w-ww1'],
+  },
+  {
+    id: 'w-hiv',
+    lane: 'world',
+    year: 1981,
+    color: 'var(--lane-disaster)',
+    title: 'HIV/AIDS pandemic recognised',
+    description:
+      'The first AIDS cases are reported; the pandemic has since caused tens of millions of deaths worldwide and reshaped global health.',
+    source: 'CDC; WHO',
+  },
+  {
+    id: 'w-covid',
+    lane: 'world',
+    year: 2020,
+    endYear: 2023,
+    color: 'var(--lane-disaster)',
+    title: 'COVID-19 pandemic',
+    description:
+      'A novel coronavirus spreads worldwide, causing millions of deaths, global lockdowns and the fastest vaccine development in history.',
+    source: 'WHO',
+  },
+
   // ───────────────────────── MESOPOTAMIA ─────────────────────────
 
   // ── Sumerian King List: antediluvian kings ──
